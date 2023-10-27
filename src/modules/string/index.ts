@@ -664,7 +664,7 @@ export class StringModule {
     let returnString = '';
 
     while (returnString.length < length) {
-      returnString += String.fromCharCode(
+      returnString += String.fromCodePoint(
         this.faker.number.int(charCodeOption)
       );
     }
